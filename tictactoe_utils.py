@@ -1,3 +1,11 @@
+def print_grid(matrix):
+    print("---------")
+    print(f"| {' '.join(matrix[0])} |")
+    print(f"| {' '.join(matrix[1])} |")
+    print(f"| {' '.join(matrix[2])} |")
+    print("---------")
+
+
 def analyze_state(matrix):
     flat_matrix = [n for row in matrix for n in row]
     x_count = flat_matrix.count('X')
